@@ -1,0 +1,30 @@
+{
+  "name": "medienagenten/bootstrap-accordion",
+  "description": "Accordion with Bootstrap 4 compliant HTML",
+  "type": "typo3-cms-extension",
+
+  "keywords": [
+    "TYPO3",
+    "CMS",
+    "Bootstrap",
+    "Accordion"
+  ],
+  "homepage": "https://github.com/medienagenten/bootstrap-accordion",
+  "license": "LGPL-3.0+",
+
+  "autoload": {
+    "psr-4": {
+      "Medienagenten\\BootstrapAccordion\\": "Classes/"
+    }
+  },
+
+  "version": "0.0.1",
+
+  "authors": [
+    {
+      "name": "Arnd Messer",
+      "email": "messer@medienagenten.de",
+      "homepage": "https://www.medienagenten.de"
+    }
+  ]
+}

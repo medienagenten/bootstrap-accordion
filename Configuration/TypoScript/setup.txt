@@ -1,0 +1,32 @@
+tt_content.bootstrap_accordion = FLUIDTEMPLATE
+tt_content.bootstrap_accordion {
+    templateName = Accordion
+
+    templateRootPaths {
+        10 = EXT:bootstrap_accordion/Resources/Private/Templates/
+    }
+
+    partialRootPaths {
+        10 = EXT:bootstrap_accordion/Resources/Private/Partials/
+    }
+
+    layoutRootPaths {
+        10 = EXT:bootstrap_accordion/Resources/Private/Layouts/
+    }
+
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        10 {
+            table = tt_content
+            pidInList.field = pid
+            where {
+                data = field:uid
+                intval = 1
+                wrap = colPos=|
+            }
+
+            orderBy = sorting
+            as = accordion_items
+        }
+    }
+}
