@@ -18,7 +18,7 @@
     }
   },
 
-  "version": "0.0.1",
+  "version": "0.1.0",
   "require": {
     "typo3/cms-core": ">=7.6.0,<8.9.99"
   },
@@ -27,6 +27,11 @@
     {
       "name": "Arnd Messer",
       "email": "messer@medienagenten.de",
+      "homepage": "https://www.medienagenten.de"
+    },
+    {
+      "name": "Miro Olma",
+      "email": "olma@medienagenten.de",
       "homepage": "https://www.medienagenten.de"
     }
   ]
