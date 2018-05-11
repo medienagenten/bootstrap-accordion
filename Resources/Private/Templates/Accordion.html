@@ -1,3 +1,5 @@
+{namespace ba=Medienagenten\BootstrapAccordion\ViewHelpers}
+
 <div xmlns="http://www.w3.org/1999/xhtml" lang="en"
      xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers"
      data-namespace-typo3-fluid="true">
@@ -8,10 +10,8 @@
             <f:if condition="{data.header}">
                 <h3>{data.header}</h3>
             </f:if>
-
             <f:for each="{accordion_items}" as="item">
-                {item.data.header}<br>
-                {item.data.bodytext -> f:format.html()}<br>
+                <f:format.raw><ba:content uid="{item.data.uid}" /></f:format.raw>
             </f:for>
         </div>
     </f:section>
