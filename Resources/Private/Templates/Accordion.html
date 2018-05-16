@@ -6,13 +6,17 @@
 
     <f:layout name="Default" />
     <f:section name="Main">
-        <div class="bootstrap-accordion">
-            <f:if condition="{data.header}">
-                <h3>{data.header}</h3>
-            </f:if>
-            <f:for each="{accordion_items}" as="item">
-                <f:format.raw><ba:content uid="{item.data.uid}" /></f:format.raw>
-            </f:for>
-        </div>
+        <article class="card ce-accordion">
+            <header class="card-header collapsed" data-toggle="collapse" href="#collapse-{data.uid}" role="button" aria-expanded="false" aria-controls="collapse-{data.uid}">
+                <h3 class="mb-0">{data.header}</h3>
+            </header>
+            <div id="collapse-{data.uid}" class="collapse">
+                <div class="card-body">
+                    <f:for each="{accordion_items}" as="item">
+                        <f:format.raw><ba:content uid="{item.data.uid}" /></f:format.raw>
+                    </f:for>
+                </div>
+            </div>
+        </article>
     </f:section>
 </div>
