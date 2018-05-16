@@ -17,6 +17,7 @@ Beside the Bootstrap core components this plugin requires:
 ## Bootstrap Documentation
 
 https://getbootstrap.com/docs/4.0/components/collapse/
+
 https://getbootstrap.com/docs/4.0/components/card/
 
 ## Installation
